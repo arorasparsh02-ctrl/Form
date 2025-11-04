@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Basic Form</legend>
+
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required minlength="2" placeholder="Jane Doe">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="6" placeholder="Enter a password">
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" max="120" placeholder="30">
+
+            <div>
+                <span>Gender</span>
+                <label for="gender-f"><input type="radio" id="gender-f" name="gender" value="female"> Female</label>
+                <label for="gender-m"><input type="radio" id="gender-m" name="gender" value="male"> Male</label>
+                <label for="gender-o"><input type="radio" id="gender-o" name="gender" value="other"> Other</label>
+            </div>
+
+            <div>
+                <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe" value="yes"> Subscribe to newsletter</label>
+            </div>
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Select...</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="in">India</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Optional message"></textarea>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
